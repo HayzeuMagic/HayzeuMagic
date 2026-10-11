@@ -8,29 +8,9 @@
 <!-- ======================= TETRIS MOUNTAIN ======================= -->
 <div align="center">
 
-```text
-  Every block of code finds its place. Watch the pieces fall.
+<img width="728" src="assets/tetris-mountain.gif" alt="Tetris pieces falling and stacking into a mountain" />
 
-        ▄▄                                                            ·
-       ▀▀▀▀
-                 ████                                           ·
-                 ████
-                          ▄▄▄▄                                ·
-                          ▀▀▀▀▀▀▀
-        ·          ▓▓▓▓
-                   ▓▓▓▓▓▓▓▓                                    ·
-                                       ▒▒▒▒
-              ·                        ▒▒▒▒▒▒▒▒
- ──────────────────────────────────────────────────────────────────
-                                            ▒▒▒▒
-                         ░░                 ▒▒▒▒    ▓▓
-                    ░░   ░░░░      ▓▓       ▒▒▒▒    ▓▓
-             ░░    ░░░  ░░░░░░   ▓▓▓▓      ▒▒▒▒▒▒  ▓▓▓▓
-       ░░    ░░░   ░░░  ░░░░░░░░ ▓▓▓▓ ▒▒   ▒▒▒▒▒▒  ▓▓▓▓ ██
-  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-```
-
-<sub>Above: active pieces &nbsp;|&nbsp; Below: the mountain under construction — each block a shipped project.</sub>
+<sub>Every block of code finds its place — each piece a project, the structure a mountain.</sub>
 
 </div>
 
