@@ -1,4 +1,4 @@
-name: Generate Contribution Snake 🐍
+name: Generate Sakura Snake 🌸
 
 on:
   schedule:
@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Generate snake animation
@@ -15,16 +18,16 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Generate github-contribution-grid-snake.svg
+      - name: Generate sakura-themed contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/sakura-snake.svg?color_snake=#e0507e&color_dots=#fdeef3,#ffd6e3,#ffbad0,#f092b4,#c75b8a
+            dist/sakura-snake-dark.svg?color_snake=#ff9ec0&color_dots=#161b33,#4a3a64,#7a4f7e,#c07ea0,#ffbad0&color_background=#0d1117
 
       - name: Push snake SVGs to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
