@@ -8,9 +8,13 @@
 <!-- ======================= TETRIS MOUNTAIN ======================= -->
 <div align="center">
 
-<img width="728" src="assets/tetris-mountain.gif" alt="Tetris pieces falling and stacking into a mountain" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fuji-dark.gif" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/fuji-light.gif" />
+  <img width="720" src="assets/fuji-light.gif" alt="Pixel-art Tetris blocks falling and stacking into Mt Fuji above a reflecting lake, with cherry blossoms and a rising sun (moonlit night in dark mode)" />
+</picture>
 
-<sub>Every block of code finds its place — each piece a project, the structure a mountain.</sub>
+<sub>Every block of code finds its place — each piece a project, the structure a mountain. 🗻</sub>
 
 </div>
 
