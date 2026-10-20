@@ -3,8 +3,8 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a2246,55:c07ea0,100:ffbad0&height=220&section=header&text=George%20Louis&fontSize=52&fontColor=fff5f8&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20Security%20Researcher%20%E2%80%A2%20AI%20Engineer&descAlignY=60&descSize=20&animation=fadeIn" />
 
-<a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/14_Repositories-ffbad0?style=flat-square&logo=github&logoColor=2c3a6e&labelColor=ffe2ec" /></a>
-<img src="https://img.shields.io/badge/84_Contributions-f092b4?style=flat-square&logo=githubsponsors&logoColor=white&labelColor=ffe2ec" />
+<a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/15_Repositories-ffbad0?style=flat-square&logo=github&logoColor=2c3a6e&labelColor=ffe2ec" /></a>
+<img src="https://img.shields.io/badge/85_Contributions-f092b4?style=flat-square&logo=githubsponsors&logoColor=white&labelColor=ffe2ec" />
 <img src="https://komarev.com/ghpvc/?username=HayzeuMagic&style=flat-square&color=e0507e&label=Visitors" />
 
 </div>
@@ -24,7 +24,7 @@
 
 <div align="center">
   <img width="100%" src="assets/panels/banner-about.svg" alt="About Me" />
-  <img width="100%" src="assets/panels/about.svg" alt="Software developer focused on cybersecurity and AI-driven systems; researching ML for web privacy; studying Security+ and CCNA; building with Docker and TypeScript; 84 contributions across 14 repositories." />
+  <img width="100%" src="assets/panels/about.svg" alt="Software developer focused on cybersecurity and AI-driven systems; researching ML for web privacy; studying Security+ and CCNA; building with Docker and TypeScript; 85 contributions across 15 repositories." />
 </div>
 
 <div align="center">
@@ -45,36 +45,35 @@
 </div>
 
 <div align="center">
-  <img width="100%" src="assets/panels/banner-repos.svg" alt="Repositories (14)" />
+  <img width="100%" src="assets/panels/banner-repos.svg" alt="Repositories (15)" />
 
-<a href="https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection"><img width="49%" src="assets/panels/repo-first-party-tracking-cookie-detection.svg" alt="First-Party-Tracking-Cookie-Detection" /></a>
-
-<a href="https://github.com/HayzeuMagic/wireshark-labs"><img width="49%" src="assets/panels/repo-wireshark-labs.svg" alt="wireshark-labs" /></a>
-<br/>
-<a href="https://github.com/HayzeuMagic/rivan-hacker-lab"><img width="49%" src="assets/panels/repo-rivan-hacker-lab.svg" alt="rivan-hacker-lab" /></a>
-
-<a href="https://github.com/HayzeuMagic/Libr-AI-ry"><img width="49%" src="assets/panels/repo-libr-ai-ry.svg" alt="Libr-AI-ry" /></a>
-<br/>
-<a href="https://github.com/HayzeuMagic/Trivia-Duel"><img width="49%" src="assets/panels/repo-trivia-duel.svg" alt="Trivia-Duel" /></a>
-
-<a href="https://github.com/HayzeuMagic/docker-guide"><img width="49%" src="assets/panels/repo-docker-guide.svg" alt="docker-guide" /></a>
-<br/>
-<a href="https://github.com/HayzeuMagic/SECplus701"><img width="49%" src="assets/panels/repo-secplus701.svg" alt="SECplus701" /></a>
-
-<a href="https://github.com/HayzeuMagic/RivanSecPlus701"><img width="49%" src="assets/panels/repo-rivansecplus701.svg" alt="RivanSecPlus701" /></a>
-<br/>
-<a href="https://github.com/HayzeuMagic/RivanAttacksExplore"><img width="49%" src="assets/panels/repo-rivanattacksexplore.svg" alt="RivanAttacksExplore" /></a>
-
-<a href="https://github.com/HayzeuMagic/tookie-osint"><img width="49%" src="assets/panels/repo-tookie-osint.svg" alt="tookie-osint" /></a>
-<br/>
-<a href="https://github.com/HayzeuMagic/ccna2"><img width="49%" src="assets/panels/repo-ccna2.svg" alt="ccna2" /></a>
-
-<a href="https://github.com/HayzeuMagic/DNS-CONFIG"><img width="49%" src="assets/panels/repo-dns-config.svg" alt="DNS-CONFIG" /></a>
-<br/>
-<a href="https://github.com/HayzeuMagic/CoffeeQuest"><img width="49%" src="assets/panels/repo-coffeequest.svg" alt="CoffeeQuest" /></a>
-
-<a href="https://github.com/HayzeuMagic/exe-to-pdf"><img width="49%" src="assets/panels/repo-exe-to-pdf.svg" alt="exe-to-pdf" /></a>
-<br/>
+<table>
+<tr>
+<td><a href="https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection"><img width="100%" src="assets/panels/repo-first-party-tracking-cookie-detection.svg" alt="First-Party-Tracking-Cookie-Detection" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/wireshark-labs"><img width="100%" src="assets/panels/repo-wireshark-labs.svg" alt="wireshark-labs" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/rivan-hacker-lab"><img width="100%" src="assets/panels/repo-rivan-hacker-lab.svg" alt="rivan-hacker-lab" /></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/HayzeuMagic/Libr-AI-ry"><img width="100%" src="assets/panels/repo-libr-ai-ry.svg" alt="Libr-AI-ry" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/Trivia-Duel"><img width="100%" src="assets/panels/repo-trivia-duel.svg" alt="Trivia-Duel" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/docker-guide"><img width="100%" src="assets/panels/repo-docker-guide.svg" alt="docker-guide" /></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/HayzeuMagic/SECplus701"><img width="100%" src="assets/panels/repo-secplus701.svg" alt="SECplus701" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/RivanSecPlus701"><img width="100%" src="assets/panels/repo-rivansecplus701.svg" alt="RivanSecPlus701" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/RivanAttacksExplore"><img width="100%" src="assets/panels/repo-rivanattacksexplore.svg" alt="RivanAttacksExplore" /></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/HayzeuMagic/tookie-osint"><img width="100%" src="assets/panels/repo-tookie-osint.svg" alt="tookie-osint" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/ccna2"><img width="100%" src="assets/panels/repo-ccna2.svg" alt="ccna2" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/DNS-CONFIG"><img width="100%" src="assets/panels/repo-dns-config.svg" alt="DNS-CONFIG" /></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/HayzeuMagic/CoffeeQuest"><img width="100%" src="assets/panels/repo-coffeequest.svg" alt="CoffeeQuest" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/exe-to-pdf"><img width="100%" src="assets/panels/repo-exe-to-pdf.svg" alt="exe-to-pdf" /></a></td>
+<td><a href="https://github.com/HayzeuMagic/py-to-exe"><img width="100%" src="assets/panels/repo-py-to-exe.svg" alt="py-to-exe" /></a></td>
+</tr>
+</table>
 
 </div>
 

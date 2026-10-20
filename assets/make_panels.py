@@ -186,7 +186,7 @@ ABOUT = [
     ("研究", "Researching machine learning for web privacy: first-party tracking-cookie detection"),
     ("学習", "Studying for CompTIA Security+ (SY0-701) and Cisco CCNA networking"),
     ("構築", "Building containerised tooling and labs with Docker and TypeScript"),
-    ("実績", "84 contributions in the last year across 14 public repositories"),
+    ("実績", "85 contributions in the last year across 15 public repositories"),
     ("哲学", "Every project is a block; the portfolio is the mountain"),
 ]
 
@@ -216,33 +216,21 @@ LANG = {
 }
 
 
-def wrap(text, width):
-    words, lines, cur = text.split(), [], ""
-    for wd in words:
-        if len(cur) + len(wd) + 1 > width:
-            lines.append(cur)
-            cur = wd
-        else:
-            cur = f"{cur} {wd}".strip()
-    return lines + [cur]
-
-
 def card(slug, name, lang, desc, kanji, seed):
-    w, h = 440, 130
-    lines = wrap(desc, 46)[:2]
-    fs = 17 if len(name) <= 28 else 14
-    body = sky(w, h, 6) + stars(w, h, 18, seed)
-    body += f'<g opacity=".55">{fuji(w - 150, h, cols=34, cell=4, peak=14)}</g>'
-    body += branch(w, 0, 90, flip=True, seed=seed, s=3)
-    body += f'<rect class="card" x="14" y="14" width="{w - 120}" height="{h - 28}" rx="10"/>'
-    body += f'<text x="30" y="44" class="ink" font-size="{fs}" font-weight="800">{escape(name)}</text>'
-    for i, ln in enumerate(lines):
-        body += f'<text x="30" y="{68 + i * 18}" class="muted" font-size="13">{escape(ln)}</text>'
+    """Compact single-row repo chip (was a tall multi-line card): name + language
+    on one line each, no wrapped description body, so 3 fit per row instead of 2
+    big cards per row — the repositories section used to run very long."""
+    w, h = 280, 56
+    fs = 15 if len(name) <= 22 else 12
+    body = sky(w, h, 5) + stars(w, h, 8, seed)
+    body += f'<g opacity=".5">{fuji(w - 90, h, cols=20, cell=3, peak=10)}</g>'
+    body += f'<rect class="card" x="8" y="7" width="{w - 16}" height="{h - 14}" rx="8"/>'
+    body += f'<text x="20" y="26" class="ink" font-size="{fs}" font-weight="800">{escape(name)}</text>'
     dot = LANG.get(lang, "#e0507e")
-    body += f'<circle cx="36" cy="{h - 30}" r="5" fill="{dot}" shape-rendering="geometricPrecision"/>'
-    body += f'<text x="48" y="{h - 26}" class="ink mono" font-size="12">{escape(lang)}</text>'
-    body += f'<text x="{w - 40}" y="{h - 24}" class="accent" font-size="24" font-weight="700" text-anchor="middle">{kanji}</text>'
-    body += petals(w, h, 6, seed)
+    body += f'<circle cx="24" cy="{h - 17}" r="4" fill="{dot}" shape-rendering="geometricPrecision"/>'
+    body += f'<text x="34" y="{h - 13}" class="muted mono" font-size="10">{escape(lang)}</text>'
+    body += f'<text x="{w - 24}" y="30" class="accent" font-size="18" font-weight="700" text-anchor="middle">{kanji}</text>'
+    body += petals(w, h, 3, seed)
     write(f"repo-{slug}.svg", svg(w, h, body, f"{name}: {desc}"))
 
 
@@ -262,6 +250,7 @@ REPOS = [
     ("DNS-CONFIG", "HTML", "DNS configuration walkthrough and utility", "名"),
     ("CoffeeQuest", "Markdown", "Coffee discovery application", "珈"),
     ("exe-to-pdf", "Markdown", "Executable-to-PDF conversion utility", "変"),
+    ("py-to-exe", "Python", "Python-to-executable packaging utility", "包"),
 ]
 
 
@@ -281,7 +270,7 @@ if __name__ == "__main__":
     banner("about", "人", "About Me", "WATASHI NI TSUITE · WHO I AM", 1)
     banner("skills", "技", "Skills & Technologies", "GIJUTSU · THE TOOLS I CLIMB WITH", 2)
     banner("repos", "作", f"Repositories ({len(REPOS)})", "SAKUHIN · EVERY BLOCK OF THE MOUNTAIN", 3)
-    banner("stats", "統", "Contributions & Statistics", "TOUKEI · 84 CONTRIBUTIONS IN THE LAST YEAR", 4)
+    banner("stats", "統", "Contributions & Statistics", "TOUKEI · 85 CONTRIBUTIONS IN THE LAST YEAR", 4)
     banner("milestones", "道", "Milestones", "MICHI · THE PATH TO THE SUMMIT", 5)
     about()
     for i, (name, lang, desc, kanji) in enumerate(REPOS):
