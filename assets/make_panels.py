@@ -186,7 +186,7 @@ ABOUT = [
     ("研究", "Researching machine learning for web privacy: first-party tracking-cookie detection"),
     ("学習", "Studying for CompTIA Security+ (SY0-701) and Cisco CCNA networking"),
     ("構築", "Building containerised tooling and labs with Docker and TypeScript"),
-    ("実績", "85 contributions in the last year across 15 public repositories"),
+    ("実績", "138 contributions in the last year across 16 public repositories"),
     ("哲学", "Every project is a block; the portfolio is the mountain"),
 ]
 
@@ -251,6 +251,7 @@ REPOS = [
     ("CoffeeQuest", "Markdown", "Coffee discovery application", "珈"),
     ("exe-to-pdf", "Markdown", "Executable-to-PDF conversion utility", "変"),
     ("py-to-exe", "Python", "Python-to-executable packaging utility", "包"),
+    ("claude-red-labs", "Python", "Offline AI-assisted pentesting labs with Claude-Red and Ollama", "紅"),
 ]
 
 
@@ -270,7 +271,7 @@ if __name__ == "__main__":
     banner("about", "人", "About Me", "WATASHI NI TSUITE · WHO I AM", 1)
     banner("skills", "技", "Skills & Technologies", "GIJUTSU · THE TOOLS I CLIMB WITH", 2)
     banner("repos", "作", f"Repositories ({len(REPOS)})", "SAKUHIN · EVERY BLOCK OF THE MOUNTAIN", 3)
-    banner("stats", "統", "Contributions & Statistics", "TOUKEI · 85 CONTRIBUTIONS IN THE LAST YEAR", 4)
+    banner("stats", "統", "Contributions & Statistics", "TOUKEI · 138 CONTRIBUTIONS IN THE LAST YEAR", 4)
     banner("milestones", "道", "Milestones", "MICHI · THE PATH TO THE SUMMIT", 5)
     about()
     for i, (name, lang, desc, kanji) in enumerate(REPOS):
