@@ -1,11 +1,12 @@
-"""Generate the pixel-art Mt Fuji Tetris animation for the profile README.
+"""Generate the pixel-art Red Fuji Tetris animation for the profile README.
 
 Tetromino blocks rain down and stack into Mt Fuji, the mountain holds while clouds
-drift and the lake shimmers, then a Tetris line-clear wipes it and the loop restarts.
+drift, three ninjas run across the lake and somersault over the summit, then a
+Tetris line-clear wipes it and the loop restarts.
 
 Two themes are rendered so GitHub can serve the right one with <picture>:
-    fuji-light.gif  dawn sky, rising sun
-    fuji-dark.gif   night sky, stars, crescent moon
+    fuji-light.gif  washi-paper dawn, hinomaru sun, vermilion torii
+    fuji-dark.gif   sumi-ink night, stars, blood-red moon
 
     python make_fuji.py
 """
@@ -45,38 +46,44 @@ def snowline(c):
 
 # ------------------------------------------------------------------ themes ---
 THEMES = {
+    # Hokusai's "Red Fuji" at dawn: washi-paper sky, hinomaru sun, vermilion slopes.
     "light": {
-        "sky": [(120, 186, 236), (160, 206, 240), (205, 225, 240), (246, 226, 212), (253, 214, 186)],
-        "orb": (232, 70, 58), "orb_rim": (244, 120, 92), "orb_glow": (250, 196, 170),
-        "cloud": (255, 255, 255), "cloud_shade": (218, 230, 244),
-        "snow_lit": [(250, 252, 255), (236, 243, 252)], "snow_shadow": [(198, 212, 236), (184, 200, 228)],
-        "rib": (160, 180, 216),
-        "rock_lit": [(66, 84, 150), (78, 96, 164), (90, 110, 178), (102, 122, 190)],
-        "rock_shadow": [(44, 58, 110), (52, 68, 124), (60, 77, 138), (68, 86, 150)],
-        "forest_lit": [(60, 122, 86), (50, 108, 76)], "forest_shadow": [(38, 88, 64), (32, 76, 56)],
-        "water": [(124, 176, 218), (106, 160, 206), (90, 144, 194), (76, 128, 180)],
-        "water_mid": (98, 152, 200),
-        "flash": (255, 255, 255),
-        "glint": (252, 214, 190),
-        "sakura": [(255, 226, 236), (255, 186, 208), (240, 146, 180)],
-        "branch": [(104, 66, 54), (78, 48, 40)],
+        "sky": [(250, 243, 230), (249, 234, 214), (246, 216, 192), (240, 190, 164), (232, 158, 132)],
+        "orb": (188, 0, 45), "orb_rim": (214, 40, 56), "orb_glow": (240, 176, 156),
+        "cloud": (255, 250, 242), "cloud_shade": (238, 216, 202),
+        "snow_lit": [(252, 248, 244), (240, 232, 228)], "snow_shadow": [(216, 198, 198), (202, 184, 186)],
+        "rib": (172, 122, 120),
+        "rock_lit": [(150, 40, 36), (170, 50, 40), (186, 62, 46), (200, 76, 54)],
+        "rock_shadow": [(104, 26, 28), (118, 32, 30), (132, 38, 34), (146, 44, 38)],
+        "forest_lit": [(54, 58, 48), (46, 50, 42)], "forest_shadow": [(36, 38, 32), (30, 32, 28)],
+        "water": [(176, 70, 66), (152, 54, 56), (128, 42, 48), (106, 32, 42)],
+        "water_mid": (140, 48, 52),
+        "flash": (255, 252, 244),
+        "glint": (255, 214, 190),
+        "momiji": [(244, 150, 52), (222, 52, 38), (176, 22, 36)],
+        "branch": [(58, 36, 32), (40, 24, 22)],
+        "torii": [(214, 52, 38), (176, 36, 30), (30, 22, 22)],
+        "ninja": [(28, 22, 26), (255, 222, 196), (204, 16, 40)], "ghost": (226, 150, 132),
         "stars": False,
     },
+    # Night: sumi-ink sky bleeding to crimson, a blood-red moon over a dark red Fuji.
     "dark": {
-        "sky": [(6, 9, 22), (10, 15, 34), (16, 23, 50), (26, 34, 70), (40, 48, 92)],
-        "orb": (246, 240, 212), "orb_rim": (214, 208, 178), "orb_glow": (52, 60, 104),
-        "cloud": (70, 80, 120), "cloud_shade": (52, 60, 98),
-        "snow_lit": [(226, 234, 248), (210, 220, 242)], "snow_shadow": [(146, 160, 200), (132, 146, 188)],
-        "rib": (112, 126, 170),
-        "rock_lit": [(30, 42, 88), (36, 50, 100), (42, 58, 112), (50, 66, 124)],
-        "rock_shadow": [(18, 26, 60), (22, 31, 70), (27, 37, 80), (32, 43, 90)],
-        "forest_lit": [(22, 60, 48), (18, 52, 42)], "forest_shadow": [(13, 40, 33), (11, 33, 28)],
-        "water": [(22, 32, 66), (17, 25, 54), (13, 20, 44), (10, 15, 36)],
-        "water_mid": (16, 24, 52),
-        "flash": (232, 238, 255),
-        "glint": (200, 196, 176),
-        "sakura": [(226, 178, 200), (192, 126, 160), (150, 92, 126)],
-        "branch": [(44, 30, 34), (32, 22, 26)],
+        "sky": [(12, 6, 8), (20, 8, 12), (34, 10, 16), (56, 14, 22), (88, 20, 28)],
+        "orb": (214, 40, 50), "orb_rim": (170, 28, 40), "orb_glow": (72, 16, 24),
+        "cloud": (64, 26, 32), "cloud_shade": (46, 18, 24),
+        "snow_lit": [(232, 222, 224), (214, 200, 204)], "snow_shadow": [(150, 128, 134), (136, 114, 122)],
+        "rib": (120, 90, 96),
+        "rock_lit": [(96, 22, 26), (110, 26, 30), (124, 30, 34), (138, 36, 38)],
+        "rock_shadow": [(60, 12, 18), (70, 16, 20), (80, 18, 24), (90, 22, 28)],
+        "forest_lit": [(26, 22, 22), (22, 18, 18)], "forest_shadow": [(16, 12, 12), (13, 10, 10)],
+        "water": [(44, 12, 18), (36, 9, 15), (28, 7, 12), (22, 5, 10)],
+        "water_mid": (36, 9, 15),
+        "flash": (255, 226, 226),
+        "glint": (222, 92, 92),
+        "momiji": [(214, 112, 44), (196, 36, 40), (140, 18, 32)],
+        "branch": [(24, 14, 14), (16, 10, 10)],
+        "torii": [(196, 38, 34), (150, 26, 26), (8, 4, 6)],
+        "ninja": [(70, 58, 72), (255, 214, 190), (255, 52, 64)], "ghost": (120, 30, 42),
         "stars": True,
     },
 }
@@ -268,7 +275,7 @@ def draw_cloud(d, theme, idx, row, phase, t, n):
             d.rectangle([x, y, x + CELL - 1, y + CELL - 1], fill=col)
 
 
-# Cherry-blossom branch in the top-left corner, in 4 px pixels for finer detail.
+# Red maple (momiji) branch in the top-left corner, in 4 px pixels for finer detail.
 P = 4
 BRANCH = [(0, 9), (1, 9), (2, 10), (3, 10), (4, 10), (5, 11), (6, 11), (7, 11), (8, 12), (9, 12), (10, 12), (11, 13),
           (12, 13), (13, 13), (14, 14), (15, 14), (16, 14), (17, 15), (18, 15), (19, 16), (20, 16), (21, 17), (22, 17),
@@ -276,13 +283,13 @@ BRANCH = [(0, 9), (1, 9), (2, 10), (3, 10), (4, 10), (5, 11), (6, 11), (7, 11), 
           (34, 23), (35, 24), (36, 24), (37, 25), (38, 25), (39, 26), (40, 26), (41, 27),
           (10, 11), (11, 10), (12, 9), (13, 8), (14, 7), (15, 7), (16, 6), (17, 6), (18, 5),
           (24, 17), (25, 16), (26, 15), (27, 15), (28, 14), (29, 14)]
-BLOSSOMS = [(18, 4), (13, 7), (29, 13), (6, 9), (22, 15), (33, 21), (41, 26), (3, 8), (16, 11), (37, 23), (26, 19), (9, 13)]
+LEAVES = [(18, 4), (13, 7), (29, 13), (6, 9), (22, 15), (33, 21), (41, 26), (3, 8), (16, 11), (37, 23), (26, 19), (9, 13)]
 PETALS = [(rng_x, rng_y, ph) for rng_x, rng_y, ph in
           [(30, 40, 0.0), (70, 30, 0.13), (120, 60, 0.27), (50, 80, 0.41), (95, 45, 0.55), (20, 55, 0.69),
            (140, 70, 0.83), (60, 20, 0.91), (110, 35, 0.06), (80, 75, 0.36), (40, 25, 0.62), (130, 50, 0.76)]]
 
 
-def draw_sakura(d, theme, t, n):
+def draw_momiji(d, theme, t, n):
     def px(x, y, col):
         d.rectangle([x * P, y * P, x * P + P - 1, y * P + P - 1], fill=col)
 
@@ -291,21 +298,125 @@ def draw_sakura(d, theme, t, n):
         px(x, y + 1, theme["branch"][1])
         if i < 20:                                # thicker near the trunk
             px(x, y + 2, theme["branch"][1])
-    light, mid, deep = theme["sakura"]
-    for bx, by in BLOSSOMS:
+    gold, red, deep = theme["momiji"]
+    for bx, by in LEAVES:
         for dx in range(-3, 4):
             for dy in range(-3, 4):
                 dist = abs(dx) + abs(dy)
                 if dist <= 1 or (dist <= 3 and hash01(bx, by, dx, dy) > 0.3 + 0.15 * dist):
-                    px(bx + dx, by + dy, light if dist == 0 else mid if dist < 2 else deep)
+                    px(bx + dx, by + dy, gold if dist == 0 else red if dist < 2 else deep)
         for dx, dy in [(-1, -1), (1, -1)]:
-            px(bx + dx, by + dy, light)
-    for x0, y0, ph in PETALS:                     # drifting petals, looping with the animation
+            px(bx + dx, by + dy, red)
+    for x0, y0, ph in PETALS:                     # drifting leaves, looping with the animation
         p = (t / n * 2 + ph) % 1.0
         x = x0 + p * 520 + 14 * math.sin(2 * math.pi * (p * 3 + ph))
         y = y0 + p * 440
-        col = mid if int(p * 20) % 2 else light
+        col = red if int(p * 20) % 2 else gold
         d.rectangle([round(x), round(y), round(x) + 3, round(y) + 2], fill=col)
+
+
+# Vermilion torii standing in the lake (Itsukushima style), in 3 px pixels.
+TP, TORII_X, TORII_BASE = 3, 18, H - 6
+TORII_W, TORII_H = 34, 30
+
+
+def draw_torii(d, theme, t, n):
+    red, red_dark, ink = theme["torii"]
+
+    def px(x, y, col):
+        X, Y = TORII_X + x * TP, TORII_BASE - (TORII_H - y) * TP
+        d.rectangle([X, Y, X + TP - 1, Y + TP - 1], fill=col)
+
+    for x in range(1, TORII_W - 1):
+        px(x, 0, ink)                               # kasagi, the black top beam
+    for x in range(TORII_W):
+        px(x, 1, ink)
+    for x in (0, TORII_W - 1):
+        px(x, 0, ink)
+        px(x, -1, ink)                              # upturned tips
+    for x in range(2, TORII_W - 2):
+        px(x, 2, red)                               # shimaki
+        px(x, 7, red)                               # nuki, the tie beam
+        px(x, 8, red_dark)
+    for y in (3, 4, 5, 6):
+        px(16, y, red)                              # gakuzuka, centre strut
+        px(17, y, red_dark)
+    for left in (6, 26):
+        for y in range(3, TORII_H):
+            base = y >= TORII_H - 4
+            px(left, y, ink if base else red)
+            px(left + 1, y, ink if base else red)
+            px(left + 2, y, ink if base else red_dark)
+    for i, left in enumerate((6, 26)):            # ripples where the pillars meet the water
+        w = 3 + round(2 * math.sin(2 * math.pi * (3 * t / n) + i))
+        x = TORII_X + (left + 1) * TP
+        d.line([(x - w * TP, TORII_BASE + 2), (x + (w + 1) * TP, TORII_BASE + 2)], fill=theme["glint"])
+
+
+# Ninjas: run across the lake, somersault over the summit, land and run off.
+NP = 4
+NINJA_RUN = [
+    ["....KKKK..", "...KKKKKK.", "RR.KKKSSK.", ".RRKKKKKK.", "....KKKK..",
+     "...KKKKKK.", "..K.KRRK.K", "....KKKK..", "...KK..KK.", "..KK....KK"],
+    ["....KKKK..", "...KKKKKK.", ".R.KKKSSK.", "RRRKKKKKK.", "....KKKK..",
+     "...KKKKKK.", "...KKRRKK.", "....KKKK..", "....KKKK..", "....KK.K.."],
+]
+NINJA_TUCK = ["..KKKK..", ".KKKKSS.", "KKKKKKKK", "KRRRRRRK", "KKKKKKKK", "KKKKKKKK", ".KKKKKK.", "..KKKK.."]
+RUN_IN, JUMP, RUN_OUT = 12, 38, 12
+TAKEOFF, LANDING = 40, 650                          # sprite x at take-off and touch-down
+GROUND = SKY_ROWS * CELL + 32                       # feet on the water, just in front of the base
+APEX = 52                                           # feet height at the top of the arc (clears the summit)
+
+
+def rotate(grid, quarter):
+    for _ in range(quarter % 4):
+        grid = ["".join(row[i] for row in reversed(grid)) for i in range(len(grid[0]))]
+    return grid
+
+
+def draw_sprite(d, grid, x, y, colors, solid=None):
+    for ry, line in enumerate(grid):
+        for rx, ch in enumerate(line):
+            if ch == ".":
+                continue
+            X, Y = round(x) + rx * NP, round(y) + ry * NP
+            d.rectangle([X, Y, X + NP - 1, Y + NP - 1], fill=solid or colors[ch])
+
+
+def ninja_at(f):
+    """Pose and position of a ninja f frames into its run, or None when off stage."""
+    if f < 0 or f >= RUN_IN + JUMP + RUN_OUT:
+        return None
+    if f < RUN_IN:
+        return "run", -40 + (TAKEOFF + 40) * f / RUN_IN, GROUND, f
+    if f < RUN_IN + JUMP:
+        p = (f - RUN_IN) / JUMP
+        return "tuck", TAKEOFF + (LANDING - TAKEOFF) * p, GROUND - (GROUND - APEX) * 4 * p * (1 - p), f
+    g = f - RUN_IN - JUMP
+    return "run", LANDING + (W + 10 - LANDING) * g / RUN_OUT, GROUND, f
+
+
+def draw_ninja(d, theme, f):
+    pose = ninja_at(f)
+    if not pose:
+        return
+    body, skin, red = theme["ninja"]
+    colors = {"K": body, "S": skin, "R": red}
+    kind, x, feet, f = pose
+    if kind == "run":
+        draw_sprite(d, NINJA_RUN[(f // 3) % 2], x, feet - 10 * NP, colors)
+        return
+    for back in (4, 2):                             # after-images trailing the flip
+        ghost = ninja_at(f - back)
+        if ghost and ghost[0] == "tuck":
+            draw_sprite(d, NINJA_TUCK, ghost[1], ghost[2] - 8 * NP, colors, solid=theme["ghost"])
+    top = feet - 8 * NP
+    wave = round(math.sin(f * 1.3))                 # scarf streams out behind
+    for i in range(3):
+        dy = wave if i else 0
+        d.rectangle([round(x) - (i + 1) * NP, round(top) + (3 + dy) * NP,
+                     round(x) - i * NP - 1, round(top) + (4 + dy) * NP - 1], fill=red)
+    draw_sprite(d, rotate(NINJA_TUCK, (f - RUN_IN) // 3), x, top, colors)   # forward somersault
 
 
 # ----------------------------------------------------------------- render ---
@@ -321,7 +432,8 @@ def render(theme_name):
     STEP, FALL = 3, 14
     land = [8 + lv * STEP + rng.randrange(STEP) for lv in levels]
     build_end = max(land) + 4
-    hold = 54
+    hold = 100                                      # long enough for three ninja jumps
+    ninjas = [build_end + 4 + i * 12 for i in range(3)]
     flash = 6
     clear_rows = PEAK
     clear_per_frame = 2
@@ -404,7 +516,10 @@ def render(theme_name):
             if front:
                 draw_cloud(d, theme, idx, row, phase, t, n)
 
-        draw_sakura(d, theme, t, n)
+        draw_torii(d, theme, t, n)
+        for start in ninjas:
+            draw_ninja(d, theme, t - start)
+        draw_momiji(d, theme, t, n)
         frames.append(img)
     return frames
 
