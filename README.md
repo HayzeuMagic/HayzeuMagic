@@ -38,6 +38,7 @@
   <img width="100%" src="assets/panels/banner-skills.svg" alt="Skills and Technologies" />
 
 <br/>
+
 [![Languages](https://skillicons.dev/icons?i=python,typescript,javascript,html,css,powershell&theme=dark)](https://skillicons.dev)
 <br/>
 [![Tools](https://skillicons.dev/icons?i=docker,git,github,vscode,linux,nodejs,nextjs&theme=dark)](https://skillicons.dev)
@@ -105,6 +106,7 @@
 <div align="center">
   <img width="100%" src="assets/panels/banner-milestones.svg" alt="Milestones" />
 </div>
+
 | | When | Milestone |
 |:-:|---|---|
 | 🔬 | **August 2026** | Published ML research on [first-party tracking-cookie detection](https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection) |
