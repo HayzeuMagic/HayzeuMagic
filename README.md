@@ -105,7 +105,6 @@
 <div align="center">
   <img width="100%" src="assets/panels/banner-milestones.svg" alt="Milestones" />
 </div>
-
 | | When | Milestone |
 |:-:|---|---|
 | 🔬 | **August 2026** | Published ML research on [first-party tracking-cookie detection](https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection) |
