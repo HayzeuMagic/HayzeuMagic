@@ -3,7 +3,7 @@
      (run on a schedule by .github/workflows/profile.yml). Edit the script, not these lines. -->
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0a0c,55:8c1c24,100:d93a2b&height=220&section=header&text=George%20Louis&fontSize=52&fontColor=fff4e6&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20Security%20Researcher%20%E2%80%A2%20AI%20Engineer&descAlignY=60&descSize=20&animation=fadeIn" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0a0c,55:8c1c24,100:d93a2b&height=220&section=header&text=Hayze%20Magic&fontSize=52&fontColor=fff4e6&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20Security%20Researcher%20%E2%80%A2%20AI%20Engineer&descAlignY=60&descSize=20&animation=fadeIn" />
 
 <!-- AUTO:badges -->
 <a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/16_Repositories-c8102e?style=flat-square&logo=github&logoColor=fff4e6&labelColor=2b1a18" /></a>
