@@ -7,8 +7,8 @@
 
 <!-- AUTO:badges -->
 <a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/16_Repositories-c8102e?style=flat-square&logo=github&logoColor=fff4e6&labelColor=2b1a18" /></a>
-<img src="https://img.shields.io/badge/237_Contributions_(last_year)-bc002d?style=flat-square&logo=githubsponsors&logoColor=fff4e6&labelColor=2b1a18" />
-<img src="https://img.shields.io/badge/20_day_streak-d93a2b?style=flat-square&logo=fireship&logoColor=fff4e6&labelColor=2b1a18" />
+<img src="https://img.shields.io/badge/262_Contributions_(last_year)-bc002d?style=flat-square&logo=githubsponsors&logoColor=fff4e6&labelColor=2b1a18" />
+<img src="https://img.shields.io/badge/21_day_streak-d93a2b?style=flat-square&logo=fireship&logoColor=fff4e6&labelColor=2b1a18" />
 <img src="https://komarev.com/ghpvc/?username=HayzeuMagic&style=flat-square&color=c8102e&label=Visitors" />
 <!-- /AUTO:badges -->
 
@@ -30,7 +30,7 @@
 <div align="center">
   <img width="100%" src="assets/panels/banner-about.svg" alt="About Me" />
 <!-- AUTO:about -->
-  <img width="100%" src="assets/panels/about.svg" alt="Software developer focused on cybersecurity and AI-driven systems; researching ML for web privacy; studying Security+ and CCNA; building security labs and tools; 237 contributions in the last year across 16 repositories." />
+  <img width="100%" src="assets/panels/about.svg" alt="Software developer focused on cybersecurity and AI-driven systems; researching ML for web privacy; studying Security+ and CCNA; building security labs and tools; 262 contributions in the last year across 16 repositories." />
 <!-- /AUTO:about -->
 </div>
 
@@ -92,7 +92,7 @@
   <img width="100%" src="assets/panels/banner-stats.svg" alt="Contributions and Statistics" />
 
 <!-- AUTO:stats -->
-<img width="100%" src="assets/panels/stats.svg" alt="237 contributions in the last year; current streak 20 days; longest streak 20 days; 238 contributions all-time" />
+<img width="100%" src="assets/panels/stats.svg" alt="262 contributions in the last year; current streak 21 days; longest streak 21 days; 263 contributions all-time" />
 <!-- /AUTO:stats -->
 
 <picture>
@@ -112,7 +112,7 @@
 | 🔬 | **August 2026** | Published ML research on [first-party tracking-cookie detection](https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection) |
 | 🦈 | **October 2026** | Launched interactive [Wireshark labs](https://github.com/HayzeuMagic/wireshark-labs) and opened the first issue on [docker-guide](https://github.com/HayzeuMagic/docker-guide/issues/1) |
 | 🔴 | **October 2026** | Released [claude-red-labs](https://github.com/HayzeuMagic/claude-red-labs): fully offline AI-assisted pentesting labs with Claude-Red and Ollama |
-| ⛩️ | **Now** | 237 contributions in the last year, 20-day streak and counting |
+| ⛩️ | **Now** | 262 contributions in the last year, 21-day streak and counting |
 | 🗻 | **Next** | CompTIA Security+ and Cisco CCNA certifications |
 
 <div align="center">
