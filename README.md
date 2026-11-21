@@ -112,6 +112,7 @@
 | | When | Milestone |
 |:-:|---|---|
 | 🔬 | **August 2026** | Published ML research on [first-party tracking-cookie detection](https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection) |
+| 📘 | **September 2026** | Started CompTIA Security+ and CCNA study repos ([SECplus701](https://github.com/HayzeuMagic/SECplus701), [ccna2](https://github.com/HayzeuMagic/ccna2)) and built [rivan-hacker-lab](https://github.com/HayzeuMagic/rivan-hacker-lab) |
 | 🦈 | **October 2026** | Launched interactive [Wireshark labs](https://github.com/HayzeuMagic/wireshark-labs) and opened the first issue on [docker-guide](https://github.com/HayzeuMagic/docker-guide/issues/1) |
 | 🔴 | **October 2026** | Released [claude-red-labs](https://github.com/HayzeuMagic/claude-red-labs): fully offline AI-assisted pentesting labs with Claude-Red and Ollama |
 | 📚 | **November 2026** | Overhauled [Libr-AI-ry](https://github.com/HayzeuMagic/Libr-AI-ry): fixed its database setup and core bugs and got the full stack running end to end |
