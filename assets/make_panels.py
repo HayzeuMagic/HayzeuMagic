@@ -471,8 +471,9 @@ def footer():
 
 # ----------------------------------------------------------------- README ---
 def replace_block(text, name, content):
-    # Blocks are optional: the README may drop a section, and its markers with it.
     pattern = re.compile(rf"(<!-- AUTO:{name} -->\n).*?(<!-- /AUTO:{name} -->)", re.S)
+    if not pattern.search(text):
+        raise SystemExit(f"README is missing the AUTO:{name} markers")
     return pattern.sub(lambda m: m.group(1) + content + m.group(2), text)
 
 
