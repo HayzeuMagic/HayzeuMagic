@@ -6,8 +6,8 @@
 
 <!-- AUTO:badges -->
 <a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/18_Repositories-c8102e?style=flat-square&logo=github&logoColor=fff4e6&labelColor=2b1a18" /></a>
-<img src="https://img.shields.io/badge/319_Contributions_(last_year)-bc002d?style=flat-square&logo=githubsponsors&logoColor=fff4e6&labelColor=2b1a18" />
-<img src="https://img.shields.io/badge/0_day_streak-d93a2b?style=flat-square&logo=fireship&logoColor=fff4e6&labelColor=2b1a18" />
+<img src="https://img.shields.io/badge/358_Contributions_(last_year)-bc002d?style=flat-square&logo=githubsponsors&logoColor=fff4e6&labelColor=2b1a18" />
+<img src="https://img.shields.io/badge/35_day_streak-d93a2b?style=flat-square&logo=fireship&logoColor=fff4e6&labelColor=2b1a18" />
 <img src="https://komarev.com/ghpvc/?username=HayzeuMagic&style=flat-square&color=c8102e&label=Visitors" />
 <!-- /AUTO:badges -->
 
@@ -47,5 +47,5 @@ Software developer focused on **cybersecurity** and **AI-driven systems**. I res
 | 🔬 | **August 2026** | Published ML research on first-party tracking-cookie detection |
 | 🔴 | **October 2026** | Released claude-red-labs and interactive Wireshark labs |
 | 📚 | **November 2026** | Overhauled Libr-AI-ry: fixed its database setup and core bugs and got the full stack running end to end |
-| ⛩️ | **Now** | 319 contributions in the last year, 0-day streak and counting |
+| ⛩️ | **Now** | 358 contributions in the last year, 35-day streak and counting |
 | 🗻 | **Next** | CompTIA Security+ and Cisco CCNA certifications |
