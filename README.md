@@ -6,9 +6,9 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a0a0c,55:8c1c24,100:d93a2b&height=220&section=header&text=George%20Louis&fontSize=52&fontColor=fff4e6&fontAlignY=38&desc=Software%20Developer%20%E2%80%A2%20Security%20Researcher%20%E2%80%A2%20AI%20Engineer&descAlignY=60&descSize=20&animation=fadeIn" />
 
 <!-- AUTO:badges -->
-<a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/18_Repositories-c8102e?style=flat-square&logo=github&logoColor=fff4e6&labelColor=2b1a18" /></a>
-<img src="https://img.shields.io/badge/369_Contributions_(last_year)-bc002d?style=flat-square&logo=githubsponsors&logoColor=fff4e6&labelColor=2b1a18" />
-<img src="https://img.shields.io/badge/36_day_streak-d93a2b?style=flat-square&logo=fireship&logoColor=fff4e6&labelColor=2b1a18" />
+<a href="https://github.com/HayzeuMagic?tab=repositories"><img src="https://img.shields.io/badge/19_Repositories-c8102e?style=flat-square&logo=github&logoColor=fff4e6&labelColor=2b1a18" /></a>
+<img src="https://img.shields.io/badge/376_Contributions_(last_year)-bc002d?style=flat-square&logo=githubsponsors&logoColor=fff4e6&labelColor=2b1a18" />
+<img src="https://img.shields.io/badge/37_day_streak-d93a2b?style=flat-square&logo=fireship&logoColor=fff4e6&labelColor=2b1a18" />
 <img src="https://komarev.com/ghpvc/?username=HayzeuMagic&style=flat-square&color=c8102e&label=Visitors" />
 <!-- /AUTO:badges -->
 
@@ -30,7 +30,7 @@
 <div align="center">
   <img width="100%" src="assets/panels/banner-about.svg" alt="About Me" />
 <!-- AUTO:about -->
-  <img width="100%" src="assets/panels/about.svg" alt="Software developer focused on cybersecurity and AI-driven systems; researching ML for web privacy; studying Security+ and CCNA; building security labs and tools; 369 contributions in the last year across 18 repositories." />
+  <img width="100%" src="assets/panels/about.svg" alt="Software developer focused on cybersecurity and AI-driven systems; researching ML for web privacy; studying Security+ and CCNA; building security labs and tools; 376 contributions in the last year across 19 repositories." />
 <!-- /AUTO:about -->
 </div>
 
@@ -53,37 +53,40 @@
 
 <div align="center">
 <!-- AUTO:repos -->
-  <img width="100%" src="assets/panels/banner-repos.svg" alt="Repositories (18)" />
+  <img width="100%" src="assets/panels/banner-repos.svg" alt="Repositories (19)" />
 
 <table>
 <tr>
+<td><a href="https://github.com/HayzeuMagic/autoconfig"><img width="100%" src="assets/panels/repo-autoconfig.svg" alt="autoconfig" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/ciscoreset"><img width="100%" src="assets/panels/repo-ciscoreset.svg" alt="ciscoreset" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/labreset"><img width="100%" src="assets/panels/repo-labreset.svg" alt="labreset" /></a></td>
-<td><a href="https://github.com/HayzeuMagic/claude-red-labs"><img width="100%" src="assets/panels/repo-claude-red-labs.svg" alt="claude-red-labs" /></a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/HayzeuMagic/claude-red-labs"><img width="100%" src="assets/panels/repo-claude-red-labs.svg" alt="claude-red-labs" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/py-to-exe"><img width="100%" src="assets/panels/repo-py-to-exe.svg" alt="py-to-exe" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/wireshark-labs"><img width="100%" src="assets/panels/repo-wireshark-labs.svg" alt="wireshark-labs" /></a></td>
-<td><a href="https://github.com/HayzeuMagic/docker-guide"><img width="100%" src="assets/panels/repo-docker-guide.svg" alt="docker-guide" /></a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/HayzeuMagic/docker-guide"><img width="100%" src="assets/panels/repo-docker-guide.svg" alt="docker-guide" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/rivan-hacker-lab"><img width="100%" src="assets/panels/repo-rivan-hacker-lab.svg" alt="rivan-hacker-lab" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/DNS-CONFIG"><img width="100%" src="assets/panels/repo-dns-config.svg" alt="DNS-CONFIG" /></a></td>
-<td><a href="https://github.com/HayzeuMagic/exe-to-pdf"><img width="100%" src="assets/panels/repo-exe-to-pdf.svg" alt="exe-to-pdf" /></a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/HayzeuMagic/exe-to-pdf"><img width="100%" src="assets/panels/repo-exe-to-pdf.svg" alt="exe-to-pdf" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/SECplus701"><img width="100%" src="assets/panels/repo-secplus701.svg" alt="SECplus701" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/tookie-osint"><img width="100%" src="assets/panels/repo-tookie-osint.svg" alt="tookie-osint" /></a></td>
-<td><a href="https://github.com/HayzeuMagic/RivanAttacksExplore"><img width="100%" src="assets/panels/repo-rivanattacksexplore.svg" alt="RivanAttacksExplore" /></a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/HayzeuMagic/RivanAttacksExplore"><img width="100%" src="assets/panels/repo-rivanattacksexplore.svg" alt="RivanAttacksExplore" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/ccna2"><img width="100%" src="assets/panels/repo-ccna2.svg" alt="ccna2" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/Trivia-Duel"><img width="100%" src="assets/panels/repo-trivia-duel.svg" alt="Trivia-Duel" /></a></td>
-<td><a href="https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection"><img width="100%" src="assets/panels/repo-first-party-tracking-cookie-detection.svg" alt="First-Party-Tracking-Cookie-Detection" /></a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/HayzeuMagic/First-Party-Tracking-Cookie-Detection"><img width="100%" src="assets/panels/repo-first-party-tracking-cookie-detection.svg" alt="First-Party-Tracking-Cookie-Detection" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/RivanSecPlus701"><img width="100%" src="assets/panels/repo-rivansecplus701.svg" alt="RivanSecPlus701" /></a></td>
 <td><a href="https://github.com/HayzeuMagic/CoffeeQuest"><img width="100%" src="assets/panels/repo-coffeequest.svg" alt="CoffeeQuest" /></a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/HayzeuMagic/Libr-AI-ry"><img width="100%" src="assets/panels/repo-libr-ai-ry.svg" alt="Libr-AI-ry" /></a></td>
 </tr>
 </table>
@@ -94,7 +97,7 @@
   <img width="100%" src="assets/panels/banner-stats.svg" alt="Contributions and Statistics" />
 
 <!-- AUTO:stats -->
-<img width="100%" src="assets/panels/stats.svg" alt="369 contributions in the last year; current streak 36 days; longest streak 36 days; 372 contributions all-time" />
+<img width="100%" src="assets/panels/stats.svg" alt="376 contributions in the last year; current streak 37 days; longest streak 37 days; 379 contributions all-time" />
 <!-- /AUTO:stats -->
 
 <picture>
@@ -116,7 +119,7 @@
 | 🦈 | **October 2026** | Launched interactive [Wireshark labs](https://github.com/HayzeuMagic/wireshark-labs) and opened the first issue on [docker-guide](https://github.com/HayzeuMagic/docker-guide/issues/1) |
 | 🔴 | **October 2026** | Released [claude-red-labs](https://github.com/HayzeuMagic/claude-red-labs): fully offline AI-assisted pentesting labs with Claude-Red and Ollama |
 | 📚 | **November 2026** | Overhauled [Libr-AI-ry](https://github.com/HayzeuMagic/Libr-AI-ry): fixed its database setup and core bugs and got the full stack running end to end |
-| ⛩️ | **Now** | 369 contributions in the last year, 36-day streak and counting |
+| ⛩️ | **Now** | 376 contributions in the last year, 37-day streak and counting |
 | 🗻 | **Next** | CompTIA Security+ and Cisco CCNA certifications |
 
 <div align="center">
